@@ -451,6 +451,19 @@ form button[type="submit"]:focus-visible {
     text-align: center;
 }
 
+.order-instructions {
+    background-color: var(--bgcolor);
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
+    line-height: 2.5rem;
+}
+
+.order-instructions h2 {
+    text-align: center;
+    margin-top: 0;
+}
 /* >>>>> Footer <<<<< */
 footer {
     text-align: center;
