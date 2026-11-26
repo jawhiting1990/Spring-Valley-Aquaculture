@@ -404,6 +404,20 @@ form button[type="submit"]:focus-visible {
     background-color: var(--linkcolor);
 }
 
+.disclaimer {
+    background-color: var(--bgcolor);
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#button-notice {
+    text-align: center;
+}
+
 /* >>>>> Footer <<<<< */
 footer {
     text-align: center;
