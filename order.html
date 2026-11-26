@@ -40,7 +40,7 @@
 
         <form>
             <div class="form-layout">
-                <fieldset class="contact">
+                <fieldset class="contact-info">
                     <legend>Contact Information</legend>
                     <div class="contact-fields">
 
@@ -81,11 +81,189 @@
 
                 </fieldset>
 
-                <fieldset class="order">
+                <fieldset class="order info">
                     <legend>Order Information</legend>
+                    <table class="order-table">
+                        <caption>Product Selection</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Select</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
 
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="eggs-qty" name="products" value="eggs-qty">
+                                </td>
+
+                                <td>
+                                    <label for="eggs-qty">Chicken Eggs (Dozen)</label>
+                                </td>
+
+                                <td>$2.00</td>
+
+                                <td>
+                                    <select name="eggs-qty" aria-label="Chicken Eggs quantity">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>$0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="live-chicken" name="products" value="live-chicken">
+                                </td>
+
+                                <td>
+                                    <label for="live-chicken">Live Chicken</label>
+                                </td>
+
+                                <td>$5.50</td>
+                                <td>
+                                    <select name="live-chicken-qty" aria-label="Live Chicken quantity">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>$0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="culled-chicken" name="products" value="culled-chicken">
+                                </td>
+
+                                <td>
+                                    <label for="culled-chicken">Culled Chicken</label>
+                                </td>
+
+                                <td>$7.50</td>
+                                <td>
+                                    <select name="culled-chicken-qty" aria-label="Culled Chicken quantity">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>$0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="culled-rabbit-qty" name="products" value="culled-rabbit-qty">
+                                </td>
+
+                                <td>
+                                    <label for="culled-rabbit-qty">Culled Rabbit</label>
+                                </td>
+
+                                <td>$5.00</td>
+                                <td>
+                                    <select name="culled-rabbit-qty" aria-label="Culled Rabbit quantity">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>$0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="netherland-dwarf-qty" name="products"
+                                        value="netherland-dwarf-qty">
+                                </td>
+
+                                <td>
+                                    <label for="netherland-dwarf-qty">Netherland Dwarf Rabbit</label>
+                                </td>
+
+                                <td>$15.00</td>
+
+                                <td>
+                                    <select name="netherland-dwarf-qty" aria-label="Netherland Dwarf Rabbit quantity">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>$0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="lionhead-qty" name="products" value="lionhead-qty">
+                                </td>
+
+                                <td>
+                                    <label for="lionhead-qty">Lionhead Rabbit</label>
+                                </td>
+
+                                <td>$25.00</td>
+
+                                <td>
+                                    <select name="lionhead-qty" aria-label="Lionhead Rabbit quantity">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>$0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="tilapia-qty" name="products" value="tilapia-qty">
+                                </td>
+
+                                <td>
+                                    <label for="tilapia-qty">Tilapia (per pound)</label>
+                                </td>
+
+                                <td>$4.00</td>
+
+                                <td>
+                                    <select name="tilapia-qty" aria-label="Tilapia quantity">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>$0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </fieldset>
-
 
             </div>
             <button type="submit">Submit Order</button>

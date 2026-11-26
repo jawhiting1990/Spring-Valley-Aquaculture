@@ -334,6 +334,43 @@ legend {
     font-size: 1rem;
 }
 
+.order-table {
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+.order-table th {
+    font-size: 1.2rem;
+}
+
+.order-table th,
+.order-table td {
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.order-table th:nth-child(2),
+.order-table td:nth-child(2) {
+    text-align: left;
+}
+
+.order-table select {
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+    font-size: 1.1rem;
+    padding: 0.25rem;
+}
+
+.order-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--linkhover);
+}
 
 /* >>>>> Footer <<<<< */
 footer {
