@@ -1,0 +1,348 @@
+/*Requirements:*/
+/*Minimum 5 HTML pages with index.html as the homepage.*/
+/*Semantic structure on every page: header, nav, main, footer, skip navigation link.*/
+/*Minimum 3 images with descriptive alt text in an images/ subfolder.*/
+/*One data table with caption and th header row.*/
+/*At least one ordered and one unordered list; at least one nested list.*/
+/*One complete accessible form: labels on all inputs, fieldset/legend on groups, minimum 4 input types.*/
+/*External CSS: css/style.css linked from all pages; minimum 4 custom properties; box-sizing reset; Google Font with fallback.*/
+/*.container centering pattern, Flexbox navigation, *:focus-visible global rule applied.*/
+/*All color combinations pass 4.5:1 contrast — ratios documented in Code Journal.*/
+/*Basic responsive baseline: img max-width:100%, at least one media query, tested at 375px with no horizontal scroll.*/
+/*Lighthouse accessibility score 80 or higher on the live GitHub Pages URL — screenshot required.*/
+/*Minimum 8 descriptive Git commits showing progressive development across the build period.*/
+
+/* >>>> Colors <<<< */
+
+/*Primary Background - #072638*/
+/*Header/Card BG - #0B3954*/
+/*Alternate Section BG - #134B6B*/
+/*Primary Text - #A8CDE0	9.29:1 / 7.22:1 / 5.55:1*/
+/*Links - #7CE8FF	11.05:1 / 8.59:1 / 6.61:1*/
+/*Link Hover / Accent - #FFE66D	12.50:1 / 9.72:1 / 7.47:1*/
+
+/* >>>>> General <<<<< */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: #072638;
+    --bgalt: #0B3954;
+    --bgheader: #134B6B;
+    --textcolor: #A8CDE0;
+    --linkcolor: #7CE8FF;
+    --linkhover: #FFE66D;
+    --font: "Unkempt", Arial, cursive;
+    --imageborder: 3px ridge #FFE66D;
+    --borderradius: 10px;
+
+}
+
+/* >>>>> Font <<<<< */
+.unkempt-regular {
+    font-family: "Unkempt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: var(--font);
+}
+
+p {
+    color: var(--textcolor);
+    font-size: 1.3rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--linkhover);
+    margin-bottom: 0.25rem;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* >>>>> Accessibility <<<<< */
+*:focus-visible {
+    outline: 2px solid var(--linkhover);
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    border: var(--imageborder);
+    border-radius: 999px;
+    padding: 5px 10px;
+    background-color: var(--bgcolor);
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+
+/* >>>>> Links <<<<< */
+a {
+    color: #7CE8FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #7CE8FF;
+}
+
+a:hover {
+    color: #FFE66D;
+}
+
+a:active {
+    color: #FFE66D;
+}
+
+/* >>>>> Body <<<<< */
+body {
+    background-color: var(--bgheader);
+    color: var(--textcolor);
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    font-family: var(--font);
+    font-size: 1.3rem;
+}
+
+ol li b {
+    color: var(--linkhover);
+}
+
+/* >>>>> Container <<<<<< */
+.container {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+}
+
+/* >>>>> Header <<<<< */
+
+
+
+/* >>>>> Navigation <<<<< */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    font-size: 1.75rem;
+}
+
+nav ul a {
+    display: inline-block;
+    color: var(--linkcolor);
+    background-color: var(--bgcolor);
+    border: var(--imageborder);
+    border-radius: 999px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+nav ul a[aria-current="page"] {
+    background-color: var(--textcolor);
+    color: var(--bgcolor);
+}
+
+nav ul a:hover,
+nav ul a:focus-visible {
+    background-color: var(--textcolor);
+    color: var(--bgcolor);
+}
+
+/* >>>>> Main <<<<< */
+main {
+    text-align: left;
+    line-height: 1.25;
+}
+
+main p {
+    text-align: left;
+    margin: 1.5rem 1.5rem 0.25rem;
+}
+
+main h1+p,
+main h2+p,
+main h3+p {
+    margin-top: 0;
+}
+
+main h1+table,
+main h2+table,
+main h3+table {
+    margin-top: 0;
+}
+
+main h1+ol,
+main h2+ol,
+main h3+ol {
+    margin-top: 0;
+}
+
+/* >>>>> Images <<<<< */
+img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+/* >>>>> Lists <<<<< */
+
+
+
+/* >>>>> Tables <<<<< */
+p+table {
+    margin-top: 0.25rem;
+}
+
+table {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: separate;
+    text-align: center;
+    table-layout: auto;
+    font-size: 1.3rem;
+}
+
+
+th,
+td {
+    padding: 0.75rem;
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+}
+
+th {
+    background-color: var(--linkcolor);
+    color: var(--bgcolor);
+    font-size: 1.5rem;
+}
+
+caption {
+    color: var(--linkcolor);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--bgalt);
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    text-align: left;
+}
+
+/* >>>>> Forms <<<<< */
+.form-layout {
+    display: flex;
+    gap: 1rem;
+}
+
+fieldset {
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+    padding: 1rem;
+    min-width: 0;
+}
+
+legend {
+    color: var(--linkhover);
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.order-info {
+    flex: 3;
+}
+
+.contact-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.form-field label {
+    font-size: 1.3rem;
+}
+
+.form-field input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    max-width: 100%;
+}
+
+.phone-type {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phone-type legend {
+    font-size: 1rem;
+}
+
+.phone-type label {
+    font-size: 1rem;
+}
+
+
+/* >>>>> Footer <<<<< */
+footer {
+    text-align: center;
+    color: var(--linkcolor);
+    border-top: 8px ridge var(--linkcolor);
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* >>>>> Media <<<<< */

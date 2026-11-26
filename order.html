@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Valley Aquaculture</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <a href="index.html">
+        <img src="images/logo.png" alt="Spring Valley Aquaculture website logo graphic">
+    </a>
+</header>
+
+<nav>
+    <p><a href="#jump" class="skip-link">Skip to main content</a></p>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="order.html" aria-current="page">Order</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <a href="gallery.html">
+        <img src="images/eggs.png" alt="cartons of eggs inside of a refrigerator.">
+    </a>
+
+    <body>
+        <section id="jump"></section>
+        <h2>Ordering Form</h2>
+        <p>Please fill out the form below to place an order</p>
+
+        <form>
+            <div class="form-layout">
+                <fieldset class="contact">
+                    <legend>Contact Information</legend>
+                    <div class="contact-fields">
+
+                        <div class="form-field">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lname" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <fieldset class="phone-type">
+                                <legend>Phone Type</legend>
+
+                                <input type="radio" id="home" name="phonetype" value="home">
+                                <label for="home">Home</label>
+
+                                <input type="radio" id="work" name="phonetype" value="work">
+                                <label for="work">Work</label>
+
+                                <input type="radio" id="cell" name="phonetype" value="cell">
+                                <label for="cell">Cell</label>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="order">
+                    <legend>Order Information</legend>
+
+                </fieldset>
+
+
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </body>
+    <footer>
+        <p>© 2026 Spring Valley Aquaculture. All rights reserved. Spring Valley Aquaculture™ and the Spring Valley
+            Aquaculture logo are trademarks of Spring Valley Aquaculture.</p>
+    </footer>
+</main>
+
+</html>
