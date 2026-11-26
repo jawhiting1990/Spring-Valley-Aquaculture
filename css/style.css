@@ -372,6 +372,31 @@ legend {
     accent-color: var(--linkhover);
 }
 
+.order-totals {
+    width: 220px;
+    max-width: 100%;
+    margin: 1rem 0 0 auto;
+    padding: 1rem;
+    background-color: var(--bgcolor);
+    border: var(--imageborder);
+    border-radius: var(--borderradius);
+    font-size: 1.3rem;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+
+.grand-total {
+    border-top: 2px solid var(--linkhover);
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    color: var(--linkhover);
+    font-weight: bold;
+}
+
 /* >>>>> Footer <<<<< */
 footer {
     text-align: center;

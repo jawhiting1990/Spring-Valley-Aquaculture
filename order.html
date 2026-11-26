@@ -59,7 +59,6 @@
                             <input type="tel" id="phone" name="phone" required>
 
                             <fieldset class="phone-type">
-                                <legend>Phone Type</legend>
 
                                 <input type="radio" id="home" name="phonetype" value="home">
                                 <label for="home">Home</label>
@@ -81,7 +80,7 @@
 
                 </fieldset>
 
-                <fieldset class="order info">
+                <fieldset class="order-info">
                     <legend>Order Information</legend>
                     <table class="order-table">
                         <caption>Product Selection</caption>
@@ -168,7 +167,8 @@
 
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="culled-rabbit-qty" name="products" value="culled-rabbit-qty">
+                                    <input type="checkbox" id="culled-rabbit-qty" name="products"
+                                        value="culled-rabbit-qty">
                                 </td>
 
                                 <td>
@@ -263,6 +263,22 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+
+                        <div class="total-row">
+                            <span>Tax (5.5%):</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+
+                        <div class="total-row grand-total">
+                            <span>Total:</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                    </div>
                 </fieldset>
 
             </div>
