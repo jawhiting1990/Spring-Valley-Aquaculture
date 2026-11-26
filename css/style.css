@@ -288,6 +288,8 @@ legend {
 
 .contact-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .order-info {
@@ -297,6 +299,8 @@ legend {
 .contact-fields {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
     gap: 1.5rem;
 }
 
@@ -372,31 +376,14 @@ legend {
     accent-color: var(--linkhover);
 }
 
-.order-totals {
-    width: 220px;
-    max-width: 100%;
-    margin: 1rem 0 0 auto;
-    padding: 1rem;
+.order-notice {
     background-color: var(--bgcolor);
     border: var(--imageborder);
     border-radius: var(--borderradius);
-    font-size: 1.3rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
 }
-
-.total-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.25rem 0;
-}
-
-.grand-total {
-    border-top: 2px solid var(--linkhover);
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    color: var(--linkhover);
-    font-weight: bold;
-}
-
 form button[type="submit"] {
     display: block;
     margin: 1.5rem auto;
